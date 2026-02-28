@@ -22,7 +22,7 @@ const PartnershipCTA = () => {
             {c.description}
           </p>
           <a
-            href="mailto:contact@3bsolution.com"
+            href="mailto:cs@3bs.com.hk"
             className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground rounded-md font-medium text-sm hover:opacity-90 transition-opacity"
           >
             {c.cta}
