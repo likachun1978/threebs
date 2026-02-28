@@ -2,6 +2,7 @@ import { useLanguage, langLabel, Language } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { getContent } from "@/lib/i18n";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const { language, setLanguage } = useLanguage();
@@ -19,10 +20,8 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">3B</span>
-          </div>
-          <span className="font-semibold text-foreground tracking-tight">3B Solution</span>
+          <img src={logo} alt="3B Solutions" className="w-8 h-8 object-contain invert" />
+          <span className="font-semibold text-foreground tracking-tight">3B Solutions</span>
         </div>
 
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">

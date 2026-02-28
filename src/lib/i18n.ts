@@ -57,7 +57,7 @@ const content: Record<Language, SiteContent> = {
     hero: {
       tag: "AI Execution Platform",
       headline: "Intelligence that operates.",
-      sub: "3B Solution builds the AI execution layer that powers care, communication, and commerce — at scale, in the real world.",
+      sub: "3B Solutions builds the AI execution layer that powers care, communication, and commerce — at scale, in the real world.",
       cta: "Explore Partnership",
     },
     whatWeBuild: {
@@ -125,7 +125,7 @@ const content: Record<Language, SiteContent> = {
       cta: "Begin a Conversation",
     },
     footer: {
-      copyright: "© 2025 3B Solution Limited. All rights reserved.",
+      copyright: "© 2025 3B Solutions Limited. All rights reserved.",
       tagline: "AI Execution Platform",
     },
   },
@@ -134,7 +134,7 @@ const content: Record<Language, SiteContent> = {
     hero: {
       tag: "AI 執行平台",
       headline: "驅動行動的智慧。",
-      sub: "3B Solution 打造 AI 執行層，賦能照護、通訊與商業在真實世界中規模化運作。",
+      sub: "3B Solutions 打造 AI 執行層，賦能照護、通訊與商業在真實世界中規模化運作。",
       cta: "探索合作",
     },
     whatWeBuild: {
@@ -202,7 +202,7 @@ const content: Record<Language, SiteContent> = {
       cta: "開啟對話",
     },
     footer: {
-      copyright: "© 2025 3B Solution Limited. 版權所有。",
+      copyright: "© 2025 3B Solutions Limited. 版權所有。",
       tagline: "AI 執行平台",
     },
   },
@@ -211,7 +211,7 @@ const content: Record<Language, SiteContent> = {
     hero: {
       tag: "AI 执行平台",
       headline: "驱动行动的智慧。",
-      sub: "3B Solution 打造 AI 执行层，赋能照护、通信与商业在真实世界中规模化运作。",
+      sub: "3B Solutions 打造 AI 执行层，赋能照护、通信与商业在真实世界中规模化运作。",
       cta: "探索合作",
     },
     whatWeBuild: {
@@ -279,7 +279,7 @@ const content: Record<Language, SiteContent> = {
       cta: "开启对话",
     },
     footer: {
-      copyright: "© 2025 3B Solution Limited. 版权所有。",
+      copyright: "© 2025 3B Solutions Limited. 版权所有。",
       tagline: "AI 执行平台",
     },
   },
