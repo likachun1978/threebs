@@ -1,6 +1,12 @@
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
 export type Language = "en" | "zh-TW" | "zh-CN";
+
+const htmlLangMap: Record<Language, string> = {
+  en: "en",
+  "zh-TW": "zh-Hant",
+  "zh-CN": "zh-Hans",
+};
 
 interface LanguageContextType {
   language: Language;
@@ -14,6 +20,10 @@ const LanguageContext = createContext<LanguageContextType>({
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>("en");
+
+  useEffect(() => {
+    document.documentElement.lang = htmlLangMap[language];
+  }, [language]);
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
       {children}
