@@ -1,27 +1,31 @@
+import { lazy, Suspense } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import WhatWeBuild from "@/components/WhatWeBuild";
-import CoreCapabilities from "@/components/CoreCapabilities";
-import SolutionsOverview from "@/components/SolutionsOverview";
-import FlagshipUseCase from "@/components/FlagshipUseCase";
-import WhyThreeB from "@/components/WhyThreeB";
-import IndustriesEcosystem from "@/components/IndustriesEcosystem";
-import PartnershipCTA from "@/components/PartnershipCTA";
-import SiteFooter from "@/components/SiteFooter";
+
+const WhatWeBuild = lazy(() => import("@/components/WhatWeBuild"));
+const CoreCapabilities = lazy(() => import("@/components/CoreCapabilities"));
+const SolutionsOverview = lazy(() => import("@/components/SolutionsOverview"));
+const FlagshipUseCase = lazy(() => import("@/components/FlagshipUseCase"));
+const WhyThreeB = lazy(() => import("@/components/WhyThreeB"));
+const IndustriesEcosystem = lazy(() => import("@/components/IndustriesEcosystem"));
+const PartnershipCTA = lazy(() => import("@/components/PartnershipCTA"));
+const SiteFooter = lazy(() => import("@/components/SiteFooter"));
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <HeroSection />
-      <WhatWeBuild />
-      <CoreCapabilities />
-      <SolutionsOverview />
-      <FlagshipUseCase />
-      <WhyThreeB />
-      <IndustriesEcosystem />
-      <PartnershipCTA />
-      <SiteFooter />
+      <Suspense fallback={<div className="min-h-[50vh]" />}>
+        <WhatWeBuild />
+        <CoreCapabilities />
+        <SolutionsOverview />
+        <FlagshipUseCase />
+        <WhyThreeB />
+        <IndustriesEcosystem />
+        <PartnershipCTA />
+        <SiteFooter />
+      </Suspense>
     </div>
   );
 };

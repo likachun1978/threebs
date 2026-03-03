@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src={logo} alt="3B Solutions" className="w-8 h-8 object-contain invert" />
+          <img src={logo} alt="3B Solutions" className="w-8 h-8 object-contain invert" width={32} height={32} />
           <span className="font-semibold text-foreground tracking-tight">3B Solutions</span>
         </div>
 
