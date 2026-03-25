@@ -128,6 +128,7 @@ const content: Record<Language, SiteContent> = {
     footer: {
       copyright: "© 2025 3B Solutions Limited. All rights reserved.",
       tagline: "AI Execution Platform",
+      privacy: "Privacy Policy",
     },
   },
   "zh-TW": {
