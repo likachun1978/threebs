@@ -20,6 +20,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/privacy" element={<Suspense fallback={<div className="min-h-screen bg-background" />}><Privacy /></Suspense>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

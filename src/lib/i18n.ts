@@ -284,6 +284,7 @@ const content: Record<Language, SiteContent> = {
     footer: {
       copyright: "© 2025 3B Solutions Limited. 版权所有。",
       tagline: "AI 执行平台",
+      privacy: "隐私政策",
     },
   },
 };
