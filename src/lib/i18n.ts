@@ -48,6 +48,7 @@ interface SiteContent {
   footer: {
     copyright: string;
     tagline: string;
+    privacy: string;
   };
 }
 
