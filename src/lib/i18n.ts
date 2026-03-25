@@ -48,6 +48,7 @@ interface SiteContent {
   footer: {
     copyright: string;
     tagline: string;
+    privacy: string;
   };
 }
 
@@ -127,6 +128,7 @@ const content: Record<Language, SiteContent> = {
     footer: {
       copyright: "© 2025 3B Solutions Limited. All rights reserved.",
       tagline: "AI Execution Platform",
+      privacy: "Privacy Policy",
     },
   },
   "zh-TW": {
@@ -204,6 +206,7 @@ const content: Record<Language, SiteContent> = {
     footer: {
       copyright: "© 2025 3B Solutions Limited. 版權所有。",
       tagline: "AI 執行平台",
+      privacy: "私隱政策",
     },
   },
   "zh-CN": {
@@ -281,6 +284,7 @@ const content: Record<Language, SiteContent> = {
     footer: {
       copyright: "© 2025 3B Solutions Limited. 版权所有。",
       tagline: "AI 执行平台",
+      privacy: "隐私政策",
     },
   },
 };
