@@ -85,7 +85,7 @@ const privacyContent = {
     sections: [
       {
         heading: "1. 简介",
-        body: "3B Solutions Limited（"我们"）致力于保护您的隐私。本隐私政策说明我们在您浏览本网站时如何收集、使用、披露及保障您的信息。"
+        body: "3B Solutions Limited（\u201C我们\u201D）致力于保护您的隐私。本隐私政策说明我们在您浏览本网站时如何收集、使用、披露及保障您的信息。"
       },
       {
         heading: "2. 我们收集的信息",
