@@ -1,6 +1,7 @@
 import { useLanguage, langLabel, Language } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { getContent } from "@/lib/i18n";
 import logo from "@/assets/logo.png";
 
@@ -19,10 +20,10 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 surface-glass"
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity" aria-label="3B Solutions - Home">
           <img src={logo} alt="3B Solutions" className="w-8 h-8 object-contain invert" width={32} height={32} />
           <span className="font-semibold text-foreground tracking-tight">3B Solutions</span>
-        </div>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#platform" className="hover:text-foreground transition-colors">{content.nav.about}</a>
